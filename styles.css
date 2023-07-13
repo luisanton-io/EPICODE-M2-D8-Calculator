@@ -1,0 +1,46 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70vw;
+}
+
+button {
+    cursor: pointer;
+    outline-color: transparent;
+    border: 1px solid lightgray;
+    flex-basis: 25%;
+    opacity: 0.85;
+    font-family: monospace;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+#display {
+    background-color: lightblue;
+    text-align: end;
+    padding-inline: 1ch;
+    padding-block: 0.25em;
+}
+
+.operation {
+    background-color: lightgreen;
+}
